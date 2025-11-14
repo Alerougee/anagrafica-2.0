@@ -1,0 +1,155 @@
+body{
+    background: linear-gradient(to right, rgb(0, 30, 255), rgb(0, 187, 255));
+    margin: 0;
+}
+
+.intestazione{
+    text-align: center;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: rgb(255, 255, 255, 0.3);
+    box-shadow: 0px 0px 10px 1px rgb(255, 255, 255);
+    width: 90%;
+    margin: 0 auto;
+    padding: 5px;
+    border-radius: 32px;
+    margin-top: 20px;
+    max-width: 600px;
+}
+
+.all-container{
+    display: flex;
+    justify-content: center;
+    gap: 200px;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0 20px; 
+    margin: 0 auto;
+}
+
+.container1{
+    color: white;
+    background-color: rgb(255, 255, 255, 0.3);
+    box-shadow: 0px 0px 10px 1px rgb(117, 255, 255);
+    margin-left: 50px; 
+    padding: 20px;
+    text-align: center;
+    border-radius: 32px;
+    width: 50%;
+    max-width: 700px;
+    height: 1100px;
+}
+
+.container2{
+    color: white;
+    background-color: rgb(255, 255, 255, 0.3);
+    box-shadow: 0px 0px 10px 1px rgb(117, 255, 255);
+    margin-left: 50px; 
+    padding: 20px;
+    text-align: center;
+    border-radius: 32px;
+    width: 50%;
+    max-width: 700px;
+    height: 1100px;
+}
+
+.container1 h3{
+    font-size: 22px;
+}
+
+
+.out-nome p, .out-cognome p, .out-indirizzo p, .out-anno p, .out-generazione p, .out-sesso p, .out-veicoli p, .out-provenienza p, .out-sport p {
+    margin-bottom: 20px;
+    background-color: rgb(255, 255, 255, 0.7);
+    box-shadow: 0px 0px 5px 2px rgb(148, 234, 255);
+    border-radius: 24px;
+    width: 300px;
+    margin: 0 auto;
+    height: 50px;
+    display: flex;            
+    align-items: center;   
+    justify-content: center;   
+    text-align: center;
+    padding: 0 10px;     
+    color: black;    
+    font-size: 20px;
+}
+
+.container2 h3{
+    font-size: 22px;
+}
+
+.in-nome input, .in-cognome input, .in-indirizzo input, .in-anno input{
+    border: none;
+    font-size: 20px;
+    padding: 5px;
+    border-radius: 24px;
+    box-shadow: 0px 0px 5px 2px rgb(148, 234, 255);
+}
+
+.in-nome input::placeholder, .in-cognome input::placeholder, .in-indirizzo input::placeholder, .in-anno input::placeholder{
+    font-size: 18px;
+}
+
+.in-sesso input{
+    margin: 4px;
+    transform: scale(1.2);
+}
+
+.in-nascita select{
+    border: none;
+    padding: 10px;
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0px 0px 5px 2px rgb(148, 234, 255);
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.in-sport select{
+    border: none;
+    padding: 20px;
+    border: none;
+    box-shadow: 0px 0px 5px 2px rgb(148, 234, 255);
+    margin-top: 0px;
+    font-size: 16px;
+}
+
+.container1 button{
+    margin-top: 50px;
+    padding: 10px 20px;
+    font-size: 20px;
+    border: none;
+    border-radius: 24px;
+    box-shadow: 0px 0px 5px 2px rgb(148, 234, 255);
+}
+
+.container1 button:hover{
+    background-color: rgb(206, 206, 206);
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+}
+
+.container1 button:active{
+    box-shadow: none;
+    transform: scale(0.97);
+}
+
+@media (max-width: 1300px) {
+    .all-container {
+        flex-direction: column;
+        justify-content: center;
+        padding: 20px;
+        height: auto;
+        gap: 50px;
+    }
+
+    .container1, .container2 {
+        width: 90%;
+        max-width: 500px;
+        margin: 10px 0;
+    }
+}

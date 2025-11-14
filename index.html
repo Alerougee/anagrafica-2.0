@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ANAGRAFICA</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="intestazione">
+        <h1>ANAGRAFICA</h1>
+        <p>Inserisci i tuoi dati dove vengono richiesti!</p>
+    </div>
+    <div class="all-container">
+        <div class="container1">
+
+            <section class="in-nome">
+                <h3>NOME:</h3>
+                <input type="text" id="nome" placeholder="inserisci il nome...">
+            </section>
+
+            <section class="in-cognome">
+                <h3>COGNOME:</h3>
+                <input type="text" id="cognome" placeholder="inserisci il cognome...">
+            </section>
+
+            <section class="in-indirizzo">
+                <h3>INDIRIZZO:</h3>
+                <input type="text" id="indirizzo" placeholder="inserisci l'indirizzo...">
+            </section>
+
+            <section class="in-anno">
+                <h3>ANNO DI NASCITA:</h3>
+                <input type="text" id="anno" placeholder="inserisci l'anno...">
+            </section>
+
+            <section class="in-sesso">
+                <h3>SESSO:</h3>
+                <input type="radio" name="sesso" value="Maschio">Maschio <br>
+                <input type="radio" name="sesso" value="Femmina"> Femmina <br>
+                <input type="radio" name="sesso" value="Altro"> Altro <br>
+            </section>
+
+            <section class="in-veicoli">
+                <h3>VEICOLI:</h3>
+                <input type="checkbox" name="veicolo" value="bici"> Ho una bici <br>
+                <input type="checkbox" name="veicolo" value="monopattino"> Ho un monopattino <br>
+                <input type="checkbox" name="veicolo" value="moto"> Ho una moto <br>
+                <input type="checkbox" name="veicolo" value="macchina"> Ho una macchina <br>
+            </section>
+
+            <section class="in-nascita">
+                <h3>LUOGO DI NASCITA:</h3>
+
+                <select id="prov" onchange="updateComuni(this.value)">
+                    <option value="">Seleziona provincia</option>
+                    <option value="milano">Milano</option>
+                    <option value="pavia">Pavia</option>
+                    <option value="bergamo">Bergamo</option>
+                </select>
+
+                <select id="comune" disabled>
+                    <option value="">Seleziona comune...</option>
+                </select>
+            </section>
+
+            <section class="in-sport">
+                <h3>SPORT:</h3>
+                <form name="MyForm">
+                    <select name="sport" multiple="multiple" style="height: 100px">
+                        <option value="calcio">Calcio</option>
+                        <option value="basket">Basket</option>
+                        <option value="pallavolo">Pallavolo</option>
+                        <option value="nuoto">Nuoto</option>
+                        <option value="tennis">Tennis</option>
+                        <option value="atletica">Atletica</option>
+                        <option value="boxe">Boxe</option>
+                        <option value="equitazione">Equitazione</option>
+                        <option value="palestra">Palestra</option>
+                    </select>
+                </form>
+            </section>
+
+            <button id="genera" onclick="genera()">Completa</button>
+        </div>
+
+        <div class="container2">
+            <section class="out-nome">
+                <h3>IL TUO NOME E':</h3>
+                <p id="nome-risultato"></p>
+            </section>   
+            <section class="out-cognome">
+                <h3>IL TUO COGNOME E':</h3>
+                <p id="cognome-risultato"></p>
+            </section>      
+            <section class="out-indirizzo">
+                <h3>IL TUO INDIRIZZO E':</h3>
+                <p id="indirizzo-risultato"></p>
+            </section>
+            <section class="out-anno">
+                <h3>SEI NATO NEL:</h3>
+                <p id="anno-risultato"></p>
+            </section>
+            <section class="out-generazione">
+                <h3>LA TUA GENERAZIONE E':</h3>
+                <p id="generazione-risultato"></p>
+            </section>
+            <section class="out-sesso">
+                <h3>IL TUO SESSO E':</h3>
+                <p id="sesso-risultato"></p>
+            </section>
+            <section class="out-veicoli">
+                <h3>I VEICOLI CHE POSSIEDI SONO:</h3>
+                <p id="veicoli-risultato"></p>
+            </section>
+            <section class="out-provenienza">
+                <h3>SE NATO A:</h3>
+                <p id="provenienza-risultato"></p>
+            </section>
+            <section class="out-sport">
+                <h3>LO SPORT CHE PRATICHI E':</h3>
+                <p id="sport-risultato"></p>
+            </section>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
