@@ -138,6 +138,12 @@ body{
     transform: scale(0.97);
 }
 
+.fine{
+    background-color: rgb(255, 255, 255, 0.7);
+    padding: 10px;
+    text-align: center;
+}
+
 @media (max-width: 1300px) {
     .all-container {
         flex-direction: column;
