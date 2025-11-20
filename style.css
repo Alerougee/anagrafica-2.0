@@ -25,9 +25,9 @@ body{
     gap: 200px;
     align-items: center;
     height: 100vh;
-    margin: 0;
     padding: 0 20px; 
     margin: 0 auto;
+    margin-top: 20%;
 }
 
 .container1{
@@ -59,7 +59,6 @@ body{
 .container1 h3{
     font-size: 22px;
 }
-
 
 .out-nome p, .out-cognome p, .out-indirizzo p, .out-anno p, .out-generazione p, .out-sesso p, .out-veicoli p, .out-provenienza p, .out-sport p {
     margin-bottom: 20px;
@@ -138,11 +137,7 @@ body{
     transform: scale(0.97);
 }
 
-.fine{
-    background-color: rgb(255, 255, 255, 0.7);
-    padding: 10px;
-    text-align: center;
-}
+
 
 @media (max-width: 1300px) {
     .all-container {
@@ -151,6 +146,7 @@ body{
         padding: 20px;
         height: auto;
         gap: 50px;
+        margin-top: 5%;
     }
 
     .container1, .container2 {
